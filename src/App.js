@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="bg-danger">
       <Header />
-      <div className="top" style={{ height: "100vh", paddingTop: "2rem" }}>
+      <div className="top" style={{ height: "100vh" }}>
         <RoutePage />
       </div>
       <Footer />
