@@ -5,7 +5,7 @@ import RoutePage from "./page/RoutePage";
 
 const App = () => {
   return (
-    <div className="bg-danger">
+    <div className="">
       <Header />
       <div className="top" style={{ height: "100vh" }}>
         <RoutePage />
