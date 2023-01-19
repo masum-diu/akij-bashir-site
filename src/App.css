@@ -1,38 +1,156 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+main {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* color: #fff; */
+}
+header {
+  margin-top: 1rem;
+}
+
+.topNav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  column-gap: 1rem;
+}
+.topMenu p {
+  margin-top: 1rem;
+ 
+}
+.topMenu button {
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgb(160, 157, 157);
+  padding: 0.5rem;
+  border-radius: 50px;
+  /* font-weight: 200; */
+  font-size: 14px;
+  /* color: #fff; */
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: #000;
+  font-size: larger;
+}
+.list {
+  column-gap: 1rem;
+  width: 100%;
+}
+.showcase h1 {
+  font-size: 6rem;
+}
+.showcase p {
+  font-size: 1.9rem;
+}
+.box {
+  display: flex;
+  column-gap: 2rem;
+}
+.box1 {
+  background-color: rgb(209, 203, 203);
+  padding: 1rem;
+  width: 20%;
+  color: #000;
+  height: 150px;
+}
+.box1 p {
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer{
+  height: 400px;
+}
+.texts{
+  margin-top: 120px;
+}
+img{
+  background-color: #fff;
+  
+}
+.ps{
+  padding-top: 5rem;
+}
+
+.display-size{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.navbar-brand img{
+  display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 1000px) {
+ 
+  .topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-brand img{
+    display: inline-block;
   }
+  .logo a img{
+    display: none;
+  }
+  
+}
+
+
+
+.dropbtn{
+  border: none;
+  background-color: transparent;
 }
